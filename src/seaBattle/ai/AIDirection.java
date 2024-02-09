@@ -11,7 +11,8 @@ public class AIDirection extends AIBase {
 	}
 
 	
-	public void draw(ArrayList<Cell> list, int i, int j) {
+	public void draw(ArrayList<
+			Cell> list, int i, int j) {
 		int m = x;
 		int n = y;
 		do {
