@@ -11,7 +11,7 @@ public class AIRandom extends AIBase {
 	}
 
 	public int doShot() {
-		ArrayList<Cell> list = new ArrayList<Cell>();
+		/*ArrayList<Cell> list = new ArrayList<Cell>();
 		for (int j = 0; j < ai.getField().getWidth(); j++) {
 			for (int i = 0; i < ai.getField().getHeight(); i++) {
 				Cell e = ai.getField().getCell(i, j);
@@ -28,8 +28,9 @@ public class AIRandom extends AIBase {
 		if (shot == Field.SHUT_INJURED) {
 			ai.action = new AIPlace(ai);
 			ai.action.setPosition(cell.x, cell.y);
-		}
-		return shot;
+		}*/
+		//return shot;
+		return 5;
 	}
 
 }

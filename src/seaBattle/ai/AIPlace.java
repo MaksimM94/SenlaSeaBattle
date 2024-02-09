@@ -10,7 +10,7 @@ public class AIPlace extends AIBase {
 
 	@Override
 	public int doShot() {
-		int m, n;
+		int m, n;/*
 		ArrayList<Cell> list = new ArrayList<Cell>();
 		for(int i = 0; i < 2; i++) {
 			m = x + i * 2 - 1;
@@ -43,7 +43,7 @@ public class AIPlace extends AIBase {
 			return shot;
 		}
 
-		ai.action = new AIRandom(ai);
+		ai.action = new AIRandom(ai);*/
 		return ai.doShot();
 	}
 	

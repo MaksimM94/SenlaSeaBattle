@@ -1,7 +1,5 @@
 package seaBattle.ai;
 
-import seaBattle.logic.Cell;
-
 import java.util.ArrayList;
 
 public class AIDirection extends AIBase {
@@ -11,7 +9,7 @@ public class AIDirection extends AIBase {
 
 	@Override
 	public int doShot() {
-		ArrayList<Cell> list = new ArrayList<Cell>();
+		/*ArrayList<Cell> list = new ArrayList<Cell>();
 		draw(list, dx, dy);
 		draw(list, -dx, -dy);
 
@@ -19,7 +17,7 @@ public class AIDirection extends AIBase {
 			return list.get(ai.rand.nextInt(list.size())).doShot();
 		}
 
-		ai.action = new AIRandom(ai);
+		ai.action = new AIRandom(ai);*/
 		return ai.doShot();
 	}
 

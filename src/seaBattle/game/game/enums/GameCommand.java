@@ -1,4 +1,4 @@
-package seaBattle.game.game;
+package seaBattle.game.game.enums;
 
 public enum GameCommand {
     HOST("host"),

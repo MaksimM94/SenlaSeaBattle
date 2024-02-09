@@ -1,6 +1,6 @@
 package seaBattle.game;
 
-import seaBattle.game.game.GameMode;
+import seaBattle.game.game.enums.GameMode;
 import seaBattle.game.mult.Client;
 import seaBattle.game.mult.Server;
 
@@ -18,6 +18,7 @@ public class Menu {
             boolean isHost = isHost();
             if (isHost) {
                 Server s = new Server(name);
+                s.start();
             } else {
                 connectToHost(name);
             }
@@ -33,7 +34,7 @@ public class Menu {
         Client c = new Client(ip, port, name);
     }
     private String writeName() {
-        System.out.println("Welcome to BattleShip by Ian Clingerman and Sophie Stahl");
+        System.out.println("Welcome to BattleShip");
         System.out.print("Please enter your name: ");
         String name = scan.nextLine();
         System.out.println("Welcome " + name);

@@ -1,4 +1,4 @@
-package seaBattle.game.game;
+package seaBattle.game.game.enums;
 
 public enum ShipType {
     SIX_CELL(6),

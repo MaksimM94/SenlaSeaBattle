@@ -1,4 +1,4 @@
-package seaBattle.game.game;
+package seaBattle.game.game.enums;
 
 public enum ShutResult {
     SHUT_MISSED("Miss"),

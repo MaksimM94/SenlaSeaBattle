@@ -1,5 +1,7 @@
 package seaBattle.game.game;
 
+import seaBattle.game.game.enums.ShipType;
+
 import java.util.*;
 // water = 0
 // ship = 1
@@ -130,7 +132,7 @@ public class BattleBoard {
         }
     }
 
-      public void shipAdd(){
+    public void shipAdd(){
         Scanner scan = new Scanner(System.in);
         int shipTypeCount = ShipType.SIX_CELL.getValue();
         int shipLength = ShipType.SIX_CELL.getValue();
@@ -159,7 +161,6 @@ public class BattleBoard {
     }
 
     public void shipRandom(){
-        //int[] shipLengths = new int[]{5,4,3,3,2};
         Random rand = new Random();
         int shipTypeCount = ShipType.SIX_CELL.getValue();
         int shipLength = ShipType.SIX_CELL.getValue();

@@ -1,7 +1,7 @@
 package seaBattle.game.mult;
 
 import seaBattle.game.game.Game;
-import seaBattle.game.game.ShutResult;
+import seaBattle.game.game.enums.ShutResult;
 
 import java.util.HashSet;
 import java.util.Scanner;
@@ -174,13 +174,32 @@ public class Player {
             String[] hitArray = hits.split(" ");
             String[] missArray = miss.split(" ");
             for (int i = 0; i < hitArray.length; i++) {
-                int a = hitArray[i].charAt(0) - '0';
-                int b = hitArray[i].charAt(1) - '0';
+                int length = hitArray[i].length();
+                int a;
+                int b;
+                if (length <= 2) {
+                    a = hitArray[i].charAt(0) - '0';
+                    b = hitArray[i].charAt(1) - '0';
+                }
+                else {
+                    a = Integer.parseInt(hitArray[i].substring(0, length / 2));
+                    b = Integer.parseInt(hitArray[i].substring(length/2));
+                }
+
                 game.oppBoard.setValue(a, b, 2);
             }
             for (int i = 0; i < missArray.length; i++) {
-                int a = missArray[i].charAt(0) - '0';
-                int b = missArray[i].charAt(1) - '0';
+                int length = missArray[i].length();
+                int a;
+                int b;
+                if (length <= 2) {
+                    a = missArray[i].charAt(0) - '0';
+                    b = missArray[i].charAt(1) - '0';
+                }
+                else {
+                    a = Integer.parseInt(missArray[i].substring(0, length / 2));
+                    b = Integer.parseInt(missArray[i].substring(length/2));
+                }
                 game.oppBoard.setValue(a, b, 3);
             }
             
