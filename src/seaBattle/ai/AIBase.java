@@ -1,7 +1,6 @@
 package seaBattle.ai;
 
-abstract public class AIBase {
-
+public abstract class AIBase {
 	protected AI ai;
 	protected int x;
 	protected int y;

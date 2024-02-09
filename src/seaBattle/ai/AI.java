@@ -1,17 +1,17 @@
 package seaBattle.ai;
 
-import seaBattle.logic.Field;
+import seaBattle.game.game.BattleBoard;
 
 import java.util.Random;
 
 public class AI {
 
-	public Field field;
+	public BattleBoard field;
 	public AIBase action;
 	public Random rand;
 	
 	
-	public AI(Field field) {
+	public AI(BattleBoard field) {
 		this.rand = new Random();
 		this.field = field;
 		this.action = new AIRandom(this);
@@ -21,7 +21,7 @@ public class AI {
 		return action.doShot();
 	}
 
-	public Field getField() {
+	public BattleBoard getField() {
 		return field;
 	}
 

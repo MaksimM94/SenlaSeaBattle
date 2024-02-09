@@ -1,8 +1,5 @@
 package seaBattle.ai;
 
-import seaBattle.logic.Cell;
-import seaBattle.logic.Field;
-
 import java.util.ArrayList;
 
 public class AIPlace extends AIBase {
@@ -38,7 +35,7 @@ public class AIPlace extends AIBase {
 		if (list.size() > 0) {
 			Cell e = list.get(ai.rand.nextInt(list.size()));
 			int shot = e.doShot();
-			if (  shot == Field.SHUT_INJURED ) {
+			if (shot == Field.SHUT_INJURED ) {
 				ai.action = new AIDirection(ai);
 				ai.action.setPosition(x, y);
 				ai.action.setDirection(e.x - x, e.y - y);

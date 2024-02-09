@@ -1,9 +1,6 @@
 package seaBattle.ai;
 
 
-import seaBattle.logic.Cell;
-import seaBattle.logic.Field;
-
 import java.util.ArrayList;
 
 

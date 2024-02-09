@@ -5,27 +5,8 @@ import seaBattle.logic.Cell;
 import java.util.ArrayList;
 
 public class AIDirection extends AIBase {
-	
 	public AIDirection(AI ai) {
 		super(ai);
-	}
-
-	
-	public void draw(ArrayList<
-			Cell> list, int i, int j) {
-		int m = x;
-		int n = y;
-		do {
-			m+= i;
-			n+= j;
-		} while ( ai.getField().isBound(m, n) && (ai.getField().getCell(m, n).getState() == Cell.CELL_INJURED) );
-		
-		if (ai.getField().isBound(m, n) ) {
-			Cell e = ai.getField().getCell(m, n);
-			if (! e.isMark() ) {
-				list.add(e);
-			}
-		}
 	}
 
 	@Override
